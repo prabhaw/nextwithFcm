@@ -3,13 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "axios": "^0.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fcm-node": "^1.5.2",
+    "firebase": "^7.19.1",
+    "firebase-admin": "^9.1.1",
+    "mongoose": "^5.10.2",
     "next": "9.5.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-toastify": "^6.0.8",
+    "tost": "^1.0.0"
   }
 }
